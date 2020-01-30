@@ -1,0 +1,69 @@
+/*
+Color Palette
+#031E21 dark green
+#F8FAF7 snow
+#F3EAC5 lemon-meringue 
+#F7A072 light salmon
+#33A7B4 verdigris
+*/
+
+/* Global Styles
+-------------------------------------------*/
+* {
+    box-sizing: border-box;
+    
+}
+html {
+
+}
+body {
+    color: #031e21;
+    background-color: #F8FAF7;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+a {
+    color: #031E21;
+}
+a:hover {
+    text-decoration: none;
+}
+/* Profile
+-------------------------------------------*/
+header {
+    background-color: rgba(247, 160, 114, .2);
+}
+
+/* Projects
+-------------------------------------------*/
+#vc-logo {
+    width: 300px;
+}
+#vc-figma {
+    width: 600px;
+}
+.projects-section {
+    background-color: rgba(243, 234, 197, .2);
+}
+.projects-section .btn {
+    text-decoration: none;
+    background-color: rgb(51, 167, 180);
+    color: #F8FAF7;
+    padding: 8px;
+    border-radius: 4px;
+}
+.projects-section .btn:hover {
+    background-color: rgba(51, 167, 180, 80%);
+}
+
+/* Work Experience
+-------------------------------------------*/
+.work-exp-section {
+    background-color: rgba(51, 167, 180, .2);
+}
+
+/* Education
+-------------------------------------------*/
+
+/* Contact Info
+-------------------------------------------*/
