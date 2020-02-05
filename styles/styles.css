@@ -9,7 +9,7 @@ Color Palette
 
 /* Global Styles
 -------------------------------------------*/
-* {
+*, :after, ::before {
     box-sizing: border-box;
     
 }
@@ -21,12 +21,29 @@ body {
     background-color: #F8FAF7;
     font-family: Helvetica, sans-serif;
     font-weight: lighter;
+    margin: 0;
+    padding: 0;
 }
 a {
     color: #031E21;
 }
 a:hover {
     text-decoration: none;
+}
+h1 {
+    margin-top: 0;
+    transition: .4s;
+}
+h1:hover {
+    color: rgb(51, 167, 180);
+}
+h2 {
+    margin: 0;
+}
+.content-wrap {
+    width: 850px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 /* Profile
 -------------------------------------------*/
@@ -42,6 +59,18 @@ header {
 #vc-figma {
     width: 600px;
 }
+/* temporary interactive feature*/
+.projects-section .content-wrap {
+    width: 850px;
+    height: 40px;
+    padding: 10px 0;
+    overflow: hidden;
+    transition: height .8s, padding .8s;
+}
+.projects-section .content-wrap:hover {
+    height: 650px;
+    padding: 60px 0;
+}
 .projects-section {
     background-color: rgba(243, 234, 197, .2);
 }
@@ -51,6 +80,8 @@ header {
     color: #F8FAF7;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
+    transition: .4s;
 }
 .projects-section .btn:hover {
     background-color: rgba(51, 167, 180, 80%);
@@ -67,3 +98,10 @@ header {
 
 /* Contact Info
 -------------------------------------------*/
+footer {
+    background-color: rgba(247, 160, 114, .2);
+}
+/*first and second element change ^ v */
+ul {
+    list-style: square;
+}
