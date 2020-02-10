@@ -14,15 +14,17 @@ Color Palette
     
 }
 html {
-
+    height: 100vh;
 }
 body {
     color: #031e21;
     background-color: #F8FAF7;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Slabo 27px', monospace;
     font-weight: lighter;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    font-size: larger;
 }
 a {
     color: #031E21;
@@ -30,49 +32,56 @@ a {
 a:hover {
     text-decoration: none;
 }
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
 h1 {
     margin-top: 0;
-    transition: .4s;
+    transition: color .4s;
+    font-size: 80px;
+    margin-bottom: .25em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #031E21;
 }
 h1:hover {
     color: rgb(51, 167, 180);
 }
 h2 {
     margin: 0;
+    font-size: 45px;
+    transition: .2s;
 }
 .content-wrap {
     width: 850px;
     margin: 0 auto;
     padding: 60px 0;
 }
+p {
+    line-height: 1.5;
+    letter-spacing: .01em;
+}
 /* Profile
 -------------------------------------------*/
 header {
     background-color: rgba(247, 160, 114, .2);
 }
-
+header h2:hover {
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+    color: rgb(143, 232, 241);
+}
 /* Projects
 -------------------------------------------*/
 #vc-logo {
     width: 300px;
 }
 #vc-figma {
-    width: 600px;
-}
-/* temporary interactive feature*/
-.projects-section .content-wrap {
-    width: 850px;
-    height: 40px;
-    padding: 10px 0;
-    overflow: hidden;
-    transition: height .8s, padding .8s;
-}
-.projects-section .content-wrap:hover {
-    height: 650px;
-    padding: 60px 0;
+    width: 600px;   
 }
 .projects-section {
     background-color: rgba(243, 234, 197, .2);
+}
+.projects-section section img {
+    float: right;
 }
 .projects-section .btn {
     text-decoration: none;
