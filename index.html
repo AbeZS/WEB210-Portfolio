@@ -11,7 +11,39 @@
   <body>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+            <ul class="dropdown">
+              <li>
+                <a href="#projects">Graphic Design</a>
+                <a href="#projects">Motion Design</a>
+                <a href="#projects">Web Design</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#work-exp">Work Experience</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+            <ul class="dropdown">
+              <li>
+                <a href="#contact">Phone</a>
+                <a href="#contact">Social Media</a>
+                <a href="#contact">Email Me</a>
+              </li>
+          </li>
+        </ul>
+      </nav>
+      <header id="about-me">
         <div class="content-wrap">
           <h1>Abe Ahmadi</h1>
           <h2>Web, Graphic, and Motion Designer</h2>
@@ -21,7 +53,7 @@
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects-section">
+      <section class="projects-section" id="projects">
         <div class="content-wrap">
           <h2>Featured Projects</h2>
           <p>View selected projects below. More information can be found at <a href="http://www.google.com" target="_blank">abe-zeinali-design.com</a>.</p>
@@ -38,7 +70,7 @@
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-exp-section">
+      <section class="work-exp-section" id="work-exp">
         <div class="content-wrap">
           <h2>Work Experience</h2>
           <p>I've worked in fields ranging from retail to technical/customer service.</p>
@@ -55,7 +87,7 @@
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education-section">
+      <section class="education-section" id="education">
         <div class="content-wrap">
           <h2>Education</h2>
 
@@ -69,7 +101,7 @@
       </section>
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
+      <footer id="contact">
         <div class="content-wrap">
           <h2>Let's Keep in Touch!</h2>
 

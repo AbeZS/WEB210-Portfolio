@@ -26,6 +26,9 @@ body {
     height: 100vh;
     font-size: larger;
 }
+body h3, body p {
+    letter-spacing: .5px;
+}
 a {
     color: #031E21;
 }
@@ -60,6 +63,50 @@ p {
     line-height: 1.5;
     letter-spacing: .01em;
 }
+/* Nav Bar 
+-------------------------------------------*/
+nav {
+    padding: 10px 50px;
+    text-align: left;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    position: relative;
+    width: 100%;
+}
+nav ul li a {
+    text-align: center;
+}
+nav li:hover .dropdown li {
+    display: block;
+}
+.dropdown {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+.dropdown li{
+    display: none;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+nav a:hover {
+    color: rgb(51, 167, 180);
+}
+
 /* Profile
 -------------------------------------------*/
 header {
