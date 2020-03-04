@@ -70,7 +70,8 @@ nav {
     text-align: left;
 }
 nav ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -78,9 +79,6 @@ nav ul {
 nav ul li {
     position: relative;
     width: 100%;
-}
-nav ul li a {
-    text-align: center;
 }
 nav li:hover .dropdown li {
     display: block;
@@ -156,6 +154,81 @@ header h2:hover {
 -------------------------------------------*/
 footer {
     background-color: rgba(247, 160, 114, .2);
+}
+.contact-form section{
+    margin-right: 20px;
+}
+.flex-area {
+    margin: 20px 0 20px 0;
+}
+.name-flex-area {
+    display: flex;
+}
+.phone-email-flex-area {
+    display: flex;
+}
+.subject-interest-flex-area {
+    display: flex;
+}
+input[type=text] {
+    width: 133px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', monospace;
+    color: #959595;
+}
+input[type=tel] {
+    width: 133px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', monospace;
+    color: #959595;
+}
+input[type=email] {
+    width: 133px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', monospace;
+    color: #959595;
+}
+select {
+    width: 306px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', monospace;
+    color: #959595;
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxI…BvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+.contact-form textarea {
+    margin-top: 1%;
+    width: 90%;
+    height: 203px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding-left: 12px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Slabo 27px', monospace;
+    color: #959595;
+    resize: none;
 }
 /*first and second element change ^ v */
 ul {
