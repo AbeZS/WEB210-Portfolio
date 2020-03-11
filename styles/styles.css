@@ -146,6 +146,10 @@ header h2:hover {
 .work-exp-section {
     background-color: rgba(51, 167, 180, .2);
 }
+.work-exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /* Education
 -------------------------------------------*/
@@ -154,6 +158,10 @@ header h2:hover {
 -------------------------------------------*/
 footer {
     background-color: rgba(247, 160, 114, .2);
+}
+footer div ul {
+    list-style: none;
+    padding-left: 0;
 }
 .contact-form section{
     margin-right: 20px;
