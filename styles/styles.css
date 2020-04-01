@@ -55,7 +55,8 @@ h2 {
     transition: .2s;
 }
 .content-wrap {
-    width: 850px;
+    max-width: 850px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -67,11 +68,11 @@ p {
 -------------------------------------------*/
 nav {
     padding: 10px 50px;
-    text-align: left;
 }
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -125,9 +126,6 @@ header h2:hover {
 .projects-section {
     background-color: rgba(243, 234, 197, .2);
 }
-.projects-section section img {
-    float: right;
-}
 .projects-section .btn {
     text-decoration: none;
     background-color: rgb(51, 167, 180);
@@ -148,11 +146,20 @@ header h2:hover {
 }
 .work-exp-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 /* Education
 -------------------------------------------*/
+
+.education-section {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+.education-section p {
+    width: 60%  ;
+}
 
 /* Contact Info
 -------------------------------------------*/
@@ -179,7 +186,8 @@ footer div ul {
     display: flex;
 }
 input[type=text] {
-    width: 133px;
+    /*width: 133px;*/
+    width: 100%;
     height: 36px;
     border: 1px solid rgba(255, 255, 255, 0);
     padding-left: 12px;
@@ -189,7 +197,8 @@ input[type=text] {
     color: #959595;
 }
 input[type=tel] {
-    width: 133px;
+    /*width: 133px;*/
+    width: 100%;
     height: 36px;
     border: 1px solid rgba(255, 255, 255, 0);
     padding-left: 12px;
@@ -199,7 +208,8 @@ input[type=tel] {
     color: #959595;
 }
 input[type=email] {
-    width: 133px;
+    /*width: 133px;*/
+    width: 100%;
     height: 36px;
     border: 1px solid rgba(255, 255, 255, 0);
     padding-left: 12px;
@@ -209,7 +219,8 @@ input[type=email] {
     color: #959595;
 }
 select {
-    width: 306px;
+    /*width: 306px;*/
+    width: 100%;
     height: 36px;
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 0px;
@@ -241,4 +252,32 @@ select {
 /*first and second element change ^ v */
 ul {
     list-style: square;
+}
+
+/* Responsive CSS
+-------------------------------------------*/
+
+@media screen and (min-width: 680px) {
+    .projects-section section img {
+        float: right;
+    }
+    .work-exp-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 679px) {
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    nav li:focus .dropdown li {
+        display: block;
+    }
+}
+@media screen and (max-width: 570px) {
+    nav ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
